@@ -21,7 +21,7 @@ jobs:
         run: node scripts/export-pdf.js
 
       - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: resume-pdf
           path: resume.pdf
