@@ -1,6 +1,4 @@
-# Resume — Tucker Parker-Warwick
-
-Personal resume published via GitHub Pages.
+# Personal resume published via GitHub Pages.
 
 🌐 **Live site:** https://tuckerwarlock.github.io/resume/
 
