@@ -241,7 +241,7 @@
             <li>Mentoring three engineers (DevOps, Associate, New Grad) and cross-training a computational science DevOps engineer on IaC and best practices</li>
             <li>Streamlined SSO/SAML certificate rotation for Entra ID enterprise applications; coordinated with Azure AD admins to ensure zero-disruption rollout across development teams</li>
             <li>Architecting AWS solutions for GitHub self-hosted runners, AMIs, ECR repositories, and IAM/Identity Center</li>
-            <li>Automating GitHub organization administration including branch protections, Actions pipelines, and Deployments</li>
+            <li>Automating GitHub organization administration including branch protections, Actions pipelines, and Deployments across ~300 users and 20 teams</li>
           </ul>
         </div>
 
@@ -252,8 +252,8 @@
           <ul>
             <li>Served as primary DevOps support contact for development teams, managing AWS infrastructure changes, SSO/IAM access, and incident resolution across a multi-account environment</li>
             <li>Implemented and maintained infrastructure as code using Terraform Cloud for AWS resources, SSO app integrations, and Azure AD connections</li>
-            <li>Owned GitHub organization governance — team structures, repository permissions, security policies, and code ownership standards</li>
-            <li>Built Slack-based SSO management app and automated user onboarding/offboarding workflows using Python</li>
+            <li>Owned GitHub organization governance — team structures, repository permissions, security policies, and code ownership standards for ~300 users across 20 teams</li>
+            <li>Automated user onboarding/offboarding workflows; built Jira Service Management automations that generate GitHub PRs from Slack requests to manage Entra ID group membership via Terraform</li>
             <li>Deployed and maintained AWS services including EKS, ECS, CodeBuild/Pipeline, Lambda, and CloudWatch</li>
           </ul>
         </div>
@@ -285,6 +285,14 @@
 
       <section>
         <h2 class="section-title">Projects</h2>
+
+        <div class="project">
+          <div class="proj-title">Drone/Harness to GitHub Actions Migration <span class="proj-role">— Project Lead</span></div>
+          <ul>
+            <li>Migrated 50 repos (30 container-based, 20 package-based) from Drone to GitHub Actions</li>
+            <li>Built a reusable workflows repository with 12 standardized setup/build/test workflows covering both migration patterns</li>
+          </ul>
+        </div>
 
         <div class="project">
           <div class="proj-title">CircleCI to GitHub Actions Migration <span class="proj-role">— Project Lead</span></div>
@@ -321,11 +329,11 @@
         </div>
 
         <div class="project">
-          <div class="proj-title">SSO Automation Platform</div>
+          <div class="proj-title">SSO Access Automation</div>
           <ul>
-            <li>Migrated IdP from OneLogin to Azure AD (Entra ID)</li>
-            <li>Developed Slack-based application for SSO management using Python, deployed on EKS</li>
-            <li>Integrated with Azure AD for group management and AWS IAM Identity Center</li>
+            <li>Migrated IdP from OneLogin to Azure AD (Entra ID), managing 15 SaaS application integrations</li>
+            <li>Designed access request workflow: Slack channel → Jira Service Management → automated GitHub PRs → Terraform workspaces → Entra ID group membership</li>
+            <li>All user access is version-controlled in GitHub and applied via Terraform, providing a full audit trail without manual provisioning</li>
           </ul>
         </div>
 
