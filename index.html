@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tucker Parker-Warwick — Resume</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent:   #2563eb;
+      --text:     #1a1a1a;
+      --muted:    #555;
+      --border:   #d1d5db;
+      --bg:       #ffffff;
+      --max-w:    860px;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      padding: 2.5rem 1.5rem;
+    }
+
+    .page {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 1rem;
+      margin-bottom: 1.75rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    header p {
+      margin-top: 0.35rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.3rem;
+      margin-bottom: 1.1rem;
+    }
+
+    /* ── Experience / Education entries ── */
+    .entry {
+      margin-bottom: 1.4rem;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+
+    .entry-header h3 {
+      font-size: 0.975rem;
+      font-weight: 600;
+    }
+
+    .entry-meta {
+      font-size: 0.82rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .entry-sub {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .entry ul {
+      padding-left: 1.25rem;
+      margin-top: 0.4rem;
+    }
+
+    .entry ul li {
+      margin-bottom: 0.25rem;
+      font-size: 0.9rem;
+    }
+
+    /* ── Projects ── */
+    .project {
+      margin-bottom: 1.25rem;
+    }
+
+    .project h3 {
+      font-size: 0.975rem;
+      font-weight: 600;
+    }
+
+    .project .role {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .project ul {
+      padding-left: 1.25rem;
+      margin-top: 0.35rem;
+    }
+
+    .project ul li {
+      margin-bottom: 0.2rem;
+      font-size: 0.9rem;
+    }
+
+    /* ── Skills ── */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-tag {
+      background: #eff6ff;
+      color: var(--accent);
+      border: 1px solid #bfdbfe;
+      border-radius: 4px;
+      padding: 0.2rem 0.65rem;
+      font-size: 0.825rem;
+      font-weight: 500;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body { padding: 0; font-size: 13px; }
+      .page { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <header>
+      <h1>Tucker Parker-Warwick</h1>
+      <p>Cloud Engineer specializing in AWS IAM, CI/CD pipelines, and DevOps automation.</p>
+    </header>
+
+    <!-- Experience -->
+    <section>
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <h3>Nutrien, Loveland — Associate DevOps Engineer</h3>
+          <span class="entry-meta">August 2022 – July 2025</span>
+        </div>
+        <ul>
+          <li>Lead developer support operations, managing infrastructure changes and SSO/IAM access across AWS environment</li>
+          <li>Implement and maintain infrastructure as code using Terraform Cloud, including AWS resources, SSO apps, and Azure integrations</li>
+          <li>Manage GitHub organization administration, including team structures, repository governance, and security policies</li>
+          <li>Develop automation solutions including Slack-based SSO management app and user onboarding/offboarding workflows</li>
+          <li>Create and maintain AWS services including EKS, ECS, CodeBuild/Pipeline, Lambda, and CloudWatch</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <h3>PAR Technology, Boulder — Sustaining Engineer</h3>
+          <span class="entry-meta">March 2021 – August 2022</span>
+        </div>
+        <ul>
+          <li>Provided administrator-level support and critical incident management for system-wide issues</li>
+          <li>Developed WPF applications and validated production software across multiple versions</li>
+          <li>Managed user creation and access control for web portals</li>
+          <li>Created advanced troubleshooting documentation and training materials</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <h3>PAR Technology, Boulder — Tech Support Lvl 2 / Lvl 3</h3>
+          <span class="entry-meta">August 2019 – March 2021</span>
+        </div>
+        <ul>
+          <li>Supported corporate IT departments and channel partners</li>
+          <li>Managed and resolved database issues on AWS servers</li>
+          <li>Coordinated with development teams on bug validation and resolution</li>
+          <li>Provided comprehensive support for POS system users and back-office operations</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <h3>Front Range Community College, Longmont — AAS Programming</h3>
+          <span class="entry-meta">2015 – 2020</span>
+        </div>
+        <p class="entry-sub">Coursework in Java, Android Development, .NET, C++, and Linux Administration</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>CI/CD Migration <span class="role">— Project Lead</span></h3>
+        <ul>
+          <li>Led company-wide migration from Drone.io and CircleCI to GitHub Actions</li>
+          <li>Managed project planning, priority assessment, and implementation across hundreds of repositories</li>
+          <li>Created standardized migration workflows and documentation</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Cloud Efficiency Initiative</h3>
+        <ul>
+          <li>Implemented organization-wide security standards including Snyk code scanning and Prisma IaC scanning</li>
+          <li>Established standardized branch protection rules and code ownership procedures</li>
+          <li>Created automated compliance checking and reporting systems</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>SSO Automation Platform</h3>
+        <ul>
+          <li>Migrated IdP from OneLogin to Azure AD (Entra ID)</li>
+          <li>Developed Slack-based application for SSO management using Python</li>
+          <li>Deployed as Kubernetes service on EKS</li>
+          <li>Integrated with Azure AD for group management and AWS IAM Identity Center</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>AWS Access Audit System</h3>
+        <ul>
+          <li>Created Python-based automation using Boto3 for AWS access mapping</li>
+          <li>Developed comprehensive audit trail system for security compliance</li>
+          <li>Implemented scheduled reporting for security team oversight</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">AWS (IAM, SSO, EKS, ECS, Lambda, CloudWatch)</span>
+        <span class="skill-tag">Terraform &amp; Infrastructure as Code</span>
+        <span class="skill-tag">Python / Boto3 / AWS SDK</span>
+        <span class="skill-tag">GitHub Actions &amp; CI/CD</span>
+        <span class="skill-tag">Kubernetes &amp; Container Orchestration</span>
+        <span class="skill-tag">Azure AD / Entra ID</span>
+        <span class="skill-tag">Security &amp; Compliance Automation</span>
+        <span class="skill-tag">PowerShell &amp; Bash Scripting</span>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
