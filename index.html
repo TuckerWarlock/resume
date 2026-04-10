@@ -190,6 +190,15 @@
       color: var(--muted);
     }
 
+    /* ── Inline code in bullets ── */
+    .entry ul li code, .project ul li code {
+      font-family: 'Courier New', monospace;
+      font-size: 0.82em;
+      background: #f3f4f6;
+      padding: 0.05em 0.3em;
+      border-radius: 3px;
+    }
+
     /* ── Print ── */
     @media print {
       body { padding: 0.4in; font-size: 12px; }
@@ -231,7 +240,7 @@
             <li>Led company-wide CI/CD migration from CircleCI to GitHub Actions across hundreds of repositories, following earlier Drone/Harness migration as Associate Engineer</li>
             <li>Architected AWS resource tagging initiative via Terraform provider-level defaults; drove compliance from 65% to 90%+ tagged across 200+ accounts in 15+ regions using AWS Config custom Lambda rules, automated SES reporting, and Grafana dashboards — then pivoted to auto-tagging based on CUR (Cost and Usage Report) data</li>
             <li>Evaluating alternatives to Terraform Cloud following IBM's acquisition of HashiCorp; leading prerequisite upgrade of 100–300 workspaces from legacy versions (0.13–1.x) to Terraform ≥1.6</li>
-            <li>Enabled and support Amazon Q and Kiro AI developer tooling for engineering teams, including rollout coordination and documentation</li>
+            <li>Enabled agentic development across the engineering org by deploying GitHub Copilot (GitHub) and Kiro (AWS); automated user access provisioning, authored supporting documentation, and drove adoption of steering docs (<code>copilot-instructions.md</code>, <code>AGENTS.md</code>) in repositories</li>
             <li>Mentoring three engineers (DevOps, Associate, New Grad) and cross-training a computational science DevOps engineer on IaC, best practices, and process documentation</li>
             <li>Rotating SSO/SAML certificates for Entra ID enterprise applications, coordinating with Azure AD admins and validating SSO continuity across development teams</li>
             <li>Architect AWS solutions for GitHub self-hosted runners, AMIs, ECR repositories, and IAM/Identity Center</li>
