@@ -194,6 +194,45 @@ section {
 
 /* ── Print ── */
 @media print {
-  body { padding: 0.4in; font-size: 12px; }
+  body {
+    padding: 0;
+    font-size: 11px;
+    line-height: 1.45;
+  }
   .page { max-width: 100%; }
+
+  /* Tighten header */
+  .top-header {
+    gap: 1rem;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .name-block h1 { font-size: 1.75rem; }
+  .name-block .job-title { font-size: 1.05rem; }
+  .name-block .summary { font-size: 0.82rem; margin-top: 0.35rem; }
+  .contact-block { font-size: 0.8rem; line-height: 1.55; }
+
+  /* Tighten body columns */
+  .body { gap: 1.5rem; }
+  section { margin-bottom: 1.1rem; }
+
+  /* Tighten experience entries */
+  .entry { margin-bottom: 0.85rem; }
+  .entry .company { font-size: 0.9rem; }
+  .entry .role { font-size: 0.85rem; }
+  .entry .dates { font-size: 0.8rem; margin-bottom: 0.15rem; }
+  .entry ul { margin-top: 0.15rem; }
+  .entry ul li { font-size: 0.8rem; margin-bottom: 0.1rem; }
+
+  /* Tighten projects */
+  .project { margin-bottom: 0.85rem; }
+  .project .proj-title { font-size: 0.9rem; }
+  .project ul { margin-top: 0.15rem; }
+  .project ul li { font-size: 0.8rem; margin-bottom: 0.1rem; }
+
+  /* Tighten sidebar */
+  .skills-list li { font-size: 0.8rem; padding: 0.05rem 0; }
+  .edu-school { font-size: 0.85rem; }
+  .edu-degree { font-size: 0.8rem; }
+  .edu-location, .edu-detail { font-size: 0.75rem; }
 }
