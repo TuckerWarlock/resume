@@ -38,8 +38,8 @@
           <div class="dates">July 2025 – Present</div>
           <ul>
             <li>Enabled agentic development across the engineering org by deploying GitHub Copilot to 80+ engineers (GitHub) and Kiro to 200+ engineers (AWS); automated user access provisioning, authored supporting documentation, and drove adoption of steering docs (<code>copilot-instructions.md</code>, <code>AGENTS.md</code>) in repositories</li>
-            <li>Mentoring three engineers (DevOps, Associate, New Grad) and cross-training a computational science DevOps engineer on IaC and best practices</li>
-            <li>Streamlined SSO/SAML certificate rotation for Entra ID enterprise applications; coordinated with Azure AD admins to ensure zero-disruption rollout across development teams</li>
+            <li>Mentoring three engineers (DevOps, Associate, New Grad) on IaC and best practices, DevOps methodologies, cloud governance, and AI responsible use</li>
+            <li>Streamlined SSO/SAML certificate rotation for Entra ID enterprise applications; coordinated with Azure AD admins to ensure zero-downtime</li>
             <li>Architecting AWS solutions for GitHub self-hosted runners, AMIs, ECR repositories, and IAM/Identity Center</li>
             <li>Automating GitHub organization administration including branch protections, Actions pipelines, and Deployments across ~300 users and 20 teams</li>
           </ul>
@@ -50,11 +50,11 @@
           <div class="role">Associate DevOps Engineer</div>
           <div class="dates">August 2022 – July 2025</div>
           <ul>
-            <li>Served as primary DevOps support contact for development teams, managing AWS infrastructure changes, SSO/IAM access, and incident resolution across a multi-account environment</li>
-            <li>Implemented and maintained infrastructure as code using Terraform Cloud for AWS resources, SSO app integrations, and Azure AD connections</li>
+            <li>Primary DevOps support for development teams, managing AWS infrastructure changes, SSO/IAM access, and incident resolution across a multi-account environment</li>
+            <li>Implemented and maintained IaC solutions using Terraform Cloud for AWS, and SSO app integrations via EntraID (Azure)</li>
             <li>Owned GitHub organization governance — team structures, repository permissions, security policies, and code ownership standards for ~300 users across 20 teams</li>
-            <li>Automated user onboarding/offboarding workflows; built Jira Service Management automations that generate GitHub PRs from Slack requests to manage Entra ID group membership via Terraform</li>
-            <li>Deployed and maintained AWS services including EKS, ECS, CodeBuild/Pipeline, Lambda, and CloudWatch</li>
+            <li>Automated user onboarding/offboarding workflows; built Jira Service Management automations that generate GitHub PRs for the IaC solution</li>
+            <li>Deployed and maintained AWS services including EKS, CodeBuild/Pipeline, SSM Params, Secrets, and CloudWatch Synthetic Canaries</li>
           </ul>
         </div>
 
@@ -64,9 +64,9 @@
           <div class="dates">March 2021 – August 2022</div>
           <ul>
             <li>Provided administrator-level support and critical incident management for system-wide issues</li>
-            <li>Developed WPF applications and validated production software across multiple versions</li>
             <li>Managed user creation and access control for web portals</li>
-            <li>Created advanced troubleshooting documentation and training materials</li>
+            <li>Created advanced process documentation and troubleshooting training materials</li>
+            <li>Developed WPF applications and validated production software across multiple versions</li>
           </ul>
         </div>
 
@@ -75,10 +75,10 @@
           <div class="role">Tech Support Lvl 2 / Lvl 3</div>
           <div class="dates">August 2019 – March 2021</div>
           <ul>
-            <li>Supported corporate IT departments and channel partners</li>
-            <li>Managed and resolved database issues on AWS servers</li>
-            <li>Coordinated with development teams on bug validation and resolution</li>
             <li>Provided comprehensive support for POS system users and back-office operations</li>
+            <li>Supported external corporate IT departments and 3rd party channel partners</li>
+            <li>Coordinated with development teams on bug reporting and validation</li>
+            <li>Migrated knowledge base articles and documentation to new platforms</li>
           </ul>
         </div>
       </section>
@@ -87,18 +87,19 @@
         <h2 class="section-title">Projects</h2>
 
         <div class="project">
-          <div class="proj-title">Drone/Harness to GitHub Actions Migration <span class="proj-role">— Project Lead</span></div>
+          <div class="proj-title">GitHub Actions Migration Program <span class="proj-role">— Project Lead</span></div>
           <ul>
-            <li>Migrated 50 repos (30 container-based, 20 package-based) from Drone to GitHub Actions</li>
-            <li>Built a reusable workflows repository with 12 standardized setup/build/test workflows covering both migration patterns</li>
+            <li><strong>Phase 1 (Drone/Harness):</strong> Migrated 50 repositories (30 container-based, 20 package-based) from Drone/Harness to GitHub Actions</li>
+            <li><strong>Phase 2 (CircleCI):</strong> Migrated 50 DevOps-owned repositories from CircleCI to GitHub Actions; supervised and assisted developer-owned migration of 100+ additional repositories</li>
+            <li>Built a reusable workflows repository with 12 standardized setup/build/test workflows and created migration documentation for both phases</li>
           </ul>
         </div>
 
         <div class="project">
-          <div class="proj-title">CircleCI to GitHub Actions Migration <span class="proj-role">— Project Lead</span></div>
+          <div class="proj-title">CloudWatch Synthetics Canaries</div>
           <ul>
-            <li>Migrated 50 DevOps-owned repositories from CircleCI to GitHub Actions; supervised and assisted developer-owned migration of 100+ additional repos</li>
-            <li>Managed project planning, priority assessment, and implementation; created standardized migration workflows and documentation</li>
+            <li>First rollout of canaries monitored health endpoints for EKS applications, providing early detection for service degradation across environments</li>
+            <li>Second canary group used Puppeteer scripts to validate login pages across multiple web portals before Auth0 alerting was in place</li>
           </ul>
         </div>
 
@@ -120,28 +121,11 @@
         </div>
 
         <div class="project">
-          <div class="proj-title">Cloud Efficiency Initiative</div>
-          <ul>
-            <li>Introduced org-wide security scanning with Snyk (code) and Prisma (IaC), eliminating entire classes of vulnerabilities before they reached production</li>
-            <li>Standardized branch protection rules and code ownership across all repositories</li>
-            <li>Transformed manual compliance reviews into automated checks with scheduled reporting</li>
-          </ul>
-        </div>
-
-        <div class="project">
           <div class="proj-title">SSO Access Automation</div>
           <ul>
             <li>Migrated IdP from OneLogin to Azure AD (Entra ID), managing 15 SaaS application integrations</li>
             <li>Designed access request workflow: Slack channel → Jira Service Management → automated GitHub PRs → Terraform workspaces → Entra ID group membership</li>
             <li>All user access is version-controlled in GitHub and applied via Terraform, providing a full audit trail without manual provisioning</li>
-          </ul>
-        </div>
-
-        <div class="project">
-          <div class="proj-title">AWS Access Audit System</div>
-          <ul>
-            <li>Created Python/Boto3 automation for comprehensive AWS access mapping</li>
-            <li>Developed audit trail system and scheduled reporting for security team oversight</li>
           </ul>
         </div>
       </section>
@@ -154,15 +138,13 @@
       <section>
         <h2 class="section-title">Skills</h2>
         <ul class="skills-list">
-          <li>AWS (IAM, Identity Center, EKS, ECS, Lambda, Config, SES)</li>
-          <li>Terraform &amp; Infrastructure as Code</li>
-          <li>GitHub Administration &amp; Actions</li>
-          <li>GitHub Copilot &amp; Kiro (AI tooling)</li>
-          <li>Amazon Q</li>
-          <li>Kubernetes &amp; Container Orchestration</li>
-          <li>Azure AD / Entra ID &amp; SSO/SAML</li>
+          <li>AWS (IAM &amp;Identity Center, EKS, CodeBuild/CodePipeline, Config)</li>
+          <li>IaC - Terraform Cloud</li>
+          <li>GitHub - Organization Administration, Actions, Renovate/Dependabot</li>
+          <li>AI tooling - GitHub Copilot &amp; Kiro (AWS)</li>
+          <li>Container Orchestration - Kubernetes, ArgoCD, Docker</li>
+          <li>Entra ID (Azure) - SSO Enterprise Applications, Group &amp; User Management</li>
           <li>Python &amp; Boto3</li>
-          <li>Security, Compliance &amp; Cost Governance</li>
         </ul>
       </section>
 
